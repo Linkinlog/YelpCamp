@@ -1,0 +1,7 @@
+<h1>Reviews for <%= campground.title %> </h1>
+<a href="/campgrounds/<%= campground._id %>">Return to <%= campground.title %> </a>
+<ul>
+    <% for ( let review of campground.reviews ) { %> 
+        <li><%= review.rating %> <%= review.body %>  </li>
+    <% } %> 
+</ul>

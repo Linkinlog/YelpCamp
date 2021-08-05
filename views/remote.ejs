@@ -1,0 +1,82 @@
+<%- layout('layouts/boilerplate.ejs') %>
+<div class="container">
+	<!-- Power button -->
+	<div class="row">
+		<div class="col-3 offset-3">
+			<div class="d-grid gap-2 ms-auto">
+				<button class="btn btn-danger" type="button">
+					<a href="/remote/?q=pwOff"><i class="fas fa-power-off"></i></a>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Volume control -->
+	<div class="row">
+		<div class="col-1 offset-3">
+			<div class="d-grid gap-2">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=volMt"><i class="fas fa-volume-mute"></i></a>
+				</button>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="d-grid gap-2">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=volDn"><i class="fas fa-volume-down"></i></a>
+				</button>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="d-grid gap-2">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=volUp"><i class="fas fa-volume-up"></i></a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- arrow up -->
+	<div class="row">
+		<div class="col-3 offset-3">
+			<div class="d-grid gap-2 ms-auto">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=up"><i class="fas fa-arrow-up"></i></a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- Left, select, right -->
+	<div class="row">
+		<div class="col-1 offset-3">
+			<div class="d-grid gap-2">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=left"><i class="fas fa-arrow-left"></i></a>
+				</button>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="d-grid gap-2">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=sel"><i class="fas fa-sign-in-alt"></i></a>
+				</button>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="d-grid gap-2">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=right"><i class="fas fa-arrow-right"></i></a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- arrow Down -->
+	<div class="row">
+		<div class="col-3 offset-3">
+			<div class="d-grid gap-2 ms-auto">
+				<button class="btn btn-info" type="button">
+					<a href="/remote/?q=down"><i class="fas fa-arrow-down"></i></a>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

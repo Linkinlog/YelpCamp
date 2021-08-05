@@ -1,0 +1,25 @@
+<%- layout('layouts/boilerplate') %>
+
+<row class="column offset-3">
+	<div class="alert alert-danger" role="alert">
+		<h4 class="alert-heading">Error!</h4>
+		<p><%= err.message %></p>
+		<hr />
+		<% if (process.env.NODE_ENV !== 'production') { %>
+		<p class="mb-0">Status code: <%= err.status %></p>
+	</div>
+	<button class="btn btn-info" onclick="myFunction()">Show Stack</button>
+	<div style="display: none" id="errorStack"><%= err.stack %></div>
+	<% }%>
+</row>
+
+<script>
+	const myFunction = () => {
+		const x = document.getElementById('errorStack');
+		if (x.style.display === 'none') {
+			x.style.display = 'block';
+		} else {
+			x.style.display = 'none';
+		}
+	};
+</script>
